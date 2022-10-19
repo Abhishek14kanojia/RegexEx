@@ -7,12 +7,14 @@ public class Main extends Details{
 	static String firstname;
 	static String lastname;
 	static String email;
+	static String MobileNo;
 	
 	public static void main(String[] args) {
 		System.out.println("welcome to the user registration problem");
 		userFirstname();
 		userLastname();
 		userEmail();
+		userMobileNo();
 	}
 
 	public static void userFirstname() {
@@ -29,5 +31,10 @@ public class Main extends Details{
 		System.out.println("Enter the your Email : ");
 		email = sc.next();
 		Details.validEmain(email);
+	}
+	public static void userMobileNo(){
+		System.out.println("Enter the your Mobile Number : ");
+		MobileNo = sc.next();
+		Details.validMobileno(MobileNo);
 	}
 }

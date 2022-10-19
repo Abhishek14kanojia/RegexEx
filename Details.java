@@ -38,9 +38,18 @@ public class Details {
 			System.out.println("valid");
 		}else {
 			System.out.println("Invalid");
-		}
+		}	
+	}
+	public static void validMobileno(String mobileNo) {
+		String regex = "^[91][_.][6-9]?[\\d]{9}$";
+		Pattern pt = Pattern.compile(regex);
+		Matcher mc = pt.matcher(mobileNo);
 		
+		if(mc.matches()) {
+			System.out.println("valid");
+		}else {
+			System.out.println("Invalid");
+		}	
 		
 	}
-		
 }
