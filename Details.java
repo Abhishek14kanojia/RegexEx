@@ -29,6 +29,18 @@ public class Details {
 		}
 		
 	}
+	public static void validEmain(String Email) {
+		String regex = "^[a-z]+[+-_.]*[a-z]*[@][a-z]+[.][a-z]{2,4}[.]*([a-z]{2})*$";
+		Pattern pt = Pattern.compile(regex);
+		Matcher mc = pt.matcher(Email);
 		
+		if(mc.matches()) {
+			System.out.println("valid");
+		}else {
+			System.out.println("Invalid");
+		}
+		
+		
+	}
 		
 }
