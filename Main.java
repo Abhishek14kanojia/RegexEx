@@ -9,6 +9,7 @@ public class Main extends Details{
 	static String email;
 	static String MobileNo;
 	static String password;
+	static String AllEmails;
 	
 	
 	public static void main(String[] args) {
@@ -18,6 +19,7 @@ public class Main extends Details{
 		userEmail();
 		userMobileNo();
 		userPassword();
+		userAllEmails();
 	}
 
 	public static void userFirstname() {
@@ -43,6 +45,11 @@ public class Main extends Details{
 	public static void userPassword() {
 		System.out.println("Enter the your Password : ");
 		password = sc.next();
-		Details.vaildPassword(password);
+		Details.validPassword(password);
+	}
+	public static void userAllEmails() {
+		System.out.println("Enter the your All Emails : ");
+		AllEmails = sc.next();
+		Details.vaildAllEmails(AllEmails);
 	}
 }   
