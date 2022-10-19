@@ -13,6 +13,22 @@ public class Details {
 			System.out.println("valid");
 		}else {
 			System.out.println("Invalid");
-		}	
+		}
+		
 	}
+	
+	public static void vaildLastName(String lastname) {
+		String regex = "^[A-Z]{1}[a-z]{2,}$";
+		Pattern pt = Pattern.compile(regex);
+		Matcher mc = pt.matcher(lastname);
+		
+		if(mc.matches()) {
+			System.out.println("valid");
+		}else {
+			System.out.println("Invalid");
+		}
+		
+	}
+		
+		
 }
