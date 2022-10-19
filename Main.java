@@ -8,6 +8,8 @@ public class Main extends Details{
 	static String lastname;
 	static String email;
 	static String MobileNo;
+	static String password;
+	
 	
 	public static void main(String[] args) {
 		System.out.println("welcome to the user registration problem");
@@ -15,6 +17,7 @@ public class Main extends Details{
 		userLastname();
 		userEmail();
 		userMobileNo();
+		userPassword();
 	}
 
 	public static void userFirstname() {
@@ -36,5 +39,10 @@ public class Main extends Details{
 		System.out.println("Enter the your Mobile Number : ");
 		MobileNo = sc.next();
 		Details.validMobileno(MobileNo);
+	}
+	public static void userPassword() {
+		System.out.println("Enter the your Password : ");
+		password = sc.next();
+		Details.vaildPassword(password);
 	}
 }
