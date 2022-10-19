@@ -53,7 +53,7 @@ public class Details {
 		
 	}
 	public static void vaildPassword(String password) {
-		String regex = "^[a-z0-9A-Z]{8,}$";
+		String regex =  "^[a-z A-Z0-9]{8,}$";
 		Pattern pt = Pattern.compile(regex);
 		Matcher mc = pt.matcher(password);
 		

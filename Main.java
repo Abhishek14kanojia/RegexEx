@@ -45,4 +45,4 @@ public class Main extends Details{
 		password = sc.next();
 		Details.vaildPassword(password);
 	}
-}
+} 
